@@ -1,5 +1,5 @@
 
-# Desarrollo del tema 30 de las oposiciones a la Escala Básica del Cuerpo Nacional de Policía
+# Desarrollo del tema 31 de las oposiciones a la Escala Básica del Cuerpo Nacional de Policía
 
 Este proyecto se inició como una petición de la academia _OB Formación_ de Málaga. Se distribuye mediante licencia CC BY 4.0 que permite editar y compartir el contenido incluso para uso comercial siempre que se cite a los creadores.
 
