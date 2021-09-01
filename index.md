@@ -1,37 +1,596 @@
-## Welcome to GitHub Pages
+# Tema 31
 
-You can use the [editor on GitHub](https://github.com/danipelon/t31cnp/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+_Procesador de textos Microsoft Word: Elementos básicos, el ayudante,
+operaciones básicas, formato de carácter, párrafo y página, corrección de un texto,
+impresión, columnas, tabulaciones, tablas y gráficos._
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Introducción
 
-### Markdown
+_Microsoft Word_ (_MS Word_ o simplemente _Word_ de aquí en adelante) es un _procesador de textos_ que se incluye en el paquete ofimático _Microsoft Office_ aunque también se puede adquirir por separado.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Editor de textos frente a procesador de textos
 
-```markdown
-Syntax highlighted code block
+Un _editor de textos_ muestra y permite editar todos y cada uno de los caracteres del fichero de texto. Un _procesador de textos_ es una herramienta más avanzada que interpreta ciertos caracteres del fichero como códigos especiales que permiten establecer propiedades del documento (márgenes, tamaño y orientación del papel, autor, etc.) o formatear el contenido (por ejemplo, texto en negritas o cursivas, espaciado entre líneas o párrafos, inclusión de tablas e imágenes, etc.). A diferencia del editor de textos, el procesador de textos no muestra estos caracteres especiales sino el resultado de aplicarlos.
 
-# Header 1
-## Header 2
-### Header 3
+#### El Bloc de notas y Wordpad
+El sistema operativo Windows incluye tanto un editor como un procesador de textos. El editor se llama _Bloc de notas_ y el procesador _Wordpad_ (una especie de _Word_ simplificado).
 
-- Bulleted
-- List
+#### Archivos de texto plano y archivos binarios
 
-1. Numbered
-2. List
+Los editores de texto se usan para editar ficheros de _texto plano_ (sin esos caracteres especiales que entienden los procesadores de texto) mientras que los procesadores de texto trabajan con _archivos binarios_ (los que incluyen esos caracteres especiales) aunque también permiten editar archivos de texto plano. Cuando se abre un archivo binario con un editor de textos como el bloc de notas, aparece información ilegible.
 
-**Bold** and _Italic_ and `Code` text
+> Aunque formalmente, todos los archivos son binarios puesto que están formados por ceros y por unos, es común denominar binarios a aquellos que no son de texto plano.
 
-[Link](url) and ![Image](src)
-```
+La _extensión_ del archivo sirve para indicar al sistema operativo con qué aplicación abrir el documento. Así, si se hace doble clic sobre un archivo con la extensión _.txt_, se abrirá con el _bloc de notas_ o cualquier otro editor que hayamos instalado a posteriori. Los archivos acabados en _.doc_ o _.docx_ se abren con _Wordpad_ excepto si se ha instalado _Word_, en cuyo caso pasarán a abrirse con este programa. 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Versiones de Word y MS Office
 
-### Jekyll Themes
+Es habitual adquirir _Word_ incluido en un paquete ofimático Office. Todas las versiones de _Microsoft Offce_ incluyen _Word_ (además de otros productos como _Excel_ o _PowerPoint_) La _versión_ indica lo actualizado que está el producto.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/danipelon/t31cnp/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Versiones de _Word_ para PC:
 
-### Support or Contact
+- Versiones sin soporte técnico*
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    Nombre | Número de versión | Notas
+    ---: | ---: | ---
+    Word 95 | 7 | 
+    Word 97 | 8 | 
+    Word 2000 | 9 | Incluye el ayudante de Office
+    Word 2002 | 10 | Office XP
+    Word 2003 | 11| Última versión con formato propietario de extensión _.doc_ e interfaz basada en menús.
+    Word 2007 | 12 | Cinta de opciones. formato Office Open XML. Extensión de archivo _.docx_
+    Word 2010 | 14 | Surge la versión en la nube _Office 365_. _Office 2010_ ya no tiene soporte técnico
+
+- Versiones con soporte técnico
+
+    Nombre | Número de versión | Notas
+    ---: | ---: | ---
+    Word 2013 | 15 | 
+    Word 2016 | 16 | 
+    Word 2019 | 16 | No compatible con Windows anterior a 10
+
+
+> - Los nombres de versión de_Word_ han coincidido con los de Office. Así, Office 2000 contenía a _Word 2000_ y _Office 2007_ a _Word 2007_, por ejemplo. Una excepción a esta regla fue Office XP que contenía a _Word 2002_.
+> - Microsoft Office se identifica a partir de 1995 con el año por motivos comerciales.
+> Los productos para _Mac OS_ pese a tener nombres diferentes a los de _Windows_, comparten número de versión. Por ejemplo, tanto _Office 2003_ para _Windows_ como _Office 2004_ para _Mac OS X_ son la versión 11.
+> - El número de versión 13 no existe.
+> - _Office 2016_ y _2019_ comparten el número de versión 16.
+
+Se puede saber la versión de _Word_ pulsando en `Archivo > Ayuda > (botón) Acerca de Word`.
+
+A veces, para un mismo nombre o número de versión existen diferentes "subversiones". El _número de compilación_ identifica cuándo se realizó el paso del código fuente al programa binario que es capaz de ejecutar Windows.
+
+#### Formato Office Open XML y extensión .docx
+
+A partir de _Office 2007_ se usa el formato _Office Open XML_. Las extensiones de los archivos pasan a tener una 'x' al final (_.docx_ en vez de _.doc_ para los documentos de texto).
+
+#### Microsoft 365 y Microsoft Office 2019
+
+A partir de _Office 2010_ aparece el servicio de suscripción basado en la nube _Office 365_ (ahora llamado _Microsoft 365_) de pago anual. Microsoft la recomienda frente a las versiones clásicas como _Office 2019_.
+
+Las ventajas de _Microsoft 365_ son:
+- Se beneficia de las actualizaciones de características mientras que _Office 2019_ solo de actualizaciones de seguridad y calidad (corrección de errores o mejoras de la estabilidad).
+- Dispone siempre de la versión más actualizada. En _office 2019_ hay que pagar de nuevo si se quiere cambiar a una versión principal más moderna.
+- Se puede instalar en cinco dispositivos a diferencia de _Office 2019_ que solo se puede instalar en un ordenador. También se puede compartir la suscripción con un máximo de cinco personas.
+- Añade características avanzadas a las app móviles (teléfono y tablet).
+- Dispone de 1TB en OneDrive por usuario (hasta 6 TB porque se puede compartir la suscripción con otras cinco personas).
+- Dispone de asistencia técnica.
+
+#### Actualizaciones y soporte técnico
+
+El soporte técnico para Office 2010 finalizó en 2020 y ya no se ofrecen actualizaciones de seguridad para ese producto. El soporte técnico para _Office 2013_ finaliza el 11 de abril de 2023.
+
+El soporte técnico para _Office 2019_ finaliza el 14 de octubre de 2025.
+
+### Ediciones de MS Office
+
+_Microsoft Office_ es un paquete de ofimática que incluye otras aplicaciones además de _Word_.
+
+Aplicación | Descripción
+--- | ---
+Word | Procesador de textos
+Excel | Editor de hojas de cálculo
+PowerPoint | Editor de presentaciones
+OneNote | Editor de notas de forma libre
+Outlook | Gestor de correo electrónico
+Publisher | Editor de publicaciones
+Access | Gestor de bases de datos
+Skype | Gestor de comunicaciones y mensajería instantánea
+Project | Gestor de proyectos
+Visio | Editor de gráficos vectoriales
+
+
+La _edición_ de Office se refiere a las funcionalidades que se incluyen dentro de una misma versión. Las ediciones de hogar incluyen _Word_, _Excel_ y _PowerPoint_ pero no el gestor de base de datos _Access_ que sí se incluye en la edición _Profesional_.
+
+_Office 2007_ se lanzó en ocho diferentes ediciones mientras que las últimas, 2013, 2016 y 2019 solo en cinco.
+
+Edición de _Office 2016/2019_ | Licencia | Word | Excel | PowerPoint | OneNote | Outlook | Publisher | Access | Skype for Business<br>Visio y Project
+--- | :---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:| :---:|
+Hogar y Estudiantes  | OEM/Retail | Sí| Sí| Sí| Sí| - | - | - | - 
+Hogar y Empresas     | OEM/Retail | Sí| Sí| Sí| Sí| Sí| - | - | - 
+Estándar             | Volumen    | Sí| Sí| Sí| Sí| Sí| Sí| - | - 
+Profesional          | OEM/Retail | Sí| Sí| Sí| Sí| Sí| Sí| Sí| - 
+Profesional Plus     | Volumen    | Sí| Sí| Sí| Sí| Sí| Sí| Sí| Sí
+
+> En _Office 2019_ se dispone de dos aplicaciones de _OneNote_:
+> - _OneNote_ (anteriormente _OneNote 2016_, _OneNote 2013_, etc.). Admite almacenamiento local además de en la nube. Dispone de más características y opciones de personalización.
+> - _OneNote para Windows 10_. Viene por defecto en Windows 10 aunque también se puede descargar desde la tienda _Microsoft Store_. Es una versión más simple, con una cinta de opciones de una sola línea horizontal. Si se dispone de una suscripción a _Office 2019_ o _365_, se muestran características adicionales (como la _reproducción de entrada de lápiz_, el _investigador_ y el _Asistente para matemáticas_).
+
+
+#### Licencias
+
+La _licencia_ de un software establece las condiciones de distribución y uso del producto. Los tipos principales de licencia de Office son:
+
+- _OEM_ (_Original Equipement Manufacturar). Está ya instalado en el equipo cuando se compra.
+- _Retail_. Venta por menor (como el típico producto empaquetado que se puede comprar en tiendas).
+- _OLP o de Volumen_. Para empresas con muchos usuarios. Se paga según el número de licencias.
+
+#### Asociar una cuenta y activar Office
+
+_Asociar una cuenta_ a Office. Consiste en ligar una cuenta de Microsoft al producto Office que se ha comprado. Solo se tiene que hacer la primera vez que se instala Office, justo antes de introducir la clave de producto.
+
+_Activación_ de Office. Es el proceso mediante el cual Microsoft identifica verifica que el producto Office es original y cumple las condiciones de uso especificada en los _Términos de licencia_ (por ejemplo, que esté instalado en un solo equipo). Generalmente la activación es automática tras aceptar los _Términos de licencia_. En caso contrario, aparecerá el asistente de activación donde se puede elegir si se quiere activar a través de Internet o por teléfono.
+
+### Novedades de las versiones de Word
+
+#### Novedades de Word 2013
+
+- Nuevo modo de lectura con vista en columnas de fácil lectura donde se han eliminado las herramientas de modificación para minimizar las distracciones.
+- Zoom de objetos (tablas, gráficos e imágenes) a pantalla completa mediante doble clic con el ratón o dos pulsaciones con el dedo en el caso de pantallas táctiles.
+- Reanuda la lectura en el punto donde se encontraba. Incluso si es desde un ordenador distinto.
+- Posibilidad de inserción de imágenes de Internet sin necesidad de guardarlas previamente en el equipo.
+- Posibilidad de inserción de vídeos en línea de forma que se puedan reproducir directamente en _Word_ sin salir del documento.
+- Contracción/expansión de encabezados mediante un clic en un pequeño icono situado en el margen izquierdo del encabezado. También se pueden insertar resúmenes en los encabezados.
+- Herramientas de colaboración simplificadas para trabajar con otros usuarios.
+- Posibilidad de guardar y compartir los documentos en la nube (SharePoint o OneDrive) de modo que se puede trabajar en el mismo archivo al mismo tiempo.
+- Nueva vista llamada _Revisión sencilla_ que ofrece una vista simple del documento con indicadores en los lugares que se han realizado cambios (barra vertical en el margen derecho).
+- Posibilidad de responder a los comentarios o marcarlos como listos.
+- Posibilidad de abrir y editar documentos PDF en _Word_.
+- Vista previa dinámica cuando se cambia el tamaño o la ubicación de gráficos, diagramas y fotografías. Con las nuevas guías de alineación es más fácil alinerlos.
+
+#### Novedades de Word 2016
+
+- Crear, abrir, editrar y guardar documentos directamente en la nube.
+- Nueva herramienta de búsqueda denominada _¿Qué desa hacer?_ (herramienta _Tell me_ en la versión inglesa).
+- Opción _Enviar como_.
+- Colaboración en tiempo real con usuarios conectados a _Office Online_.
+- Incorpora _Insights_ que proporciona información contextual desde Internet. Permite obtener definicios, artículos de Wiki y búsquedas relacionadas con palabras o frases del documento.
+
+#### Novedades de Word 2019
+
+- Muestra en tiempo real los cambios de otros colaboradores.
+- Microsoft Translator (pestaña `Revisar` de la cinta de opciones) permite traducir palabras o frases.
+- Vista de lectura inmersiva (pestaña `Vista`) con una vista para una mejor experiencia de lectura. Con botones para ajustar rápidamente el ancho de conlumna, color de página, espaciado de texto o lectura en voz alta con _Read Aloud_.
+- Dibujo mediante lápiz digital (pestaña `Dibujar`).
+- Posibilidad de generar una ecuación matemática mediante el lenguaje _LaTeX_ (`Insertar > LaTeX)`.
+- Posibilidad de insertar iconos y gráficos SVG (`Insertar > Iconos`). Se pueden girar, cambiar de color o de tamaño.
+- Posibilidad de insertar modelos en 3D (`Insertar > Modelos 3D`). Se pueden girar, inclinar o cambiar de tamaño.
+- Vista de desplazamiento de páginas en horizontal (`Vista > En paralelo`).
+- Vista de miniaturas para ir rápidamente a una página (Vista > Miniaturas). También con `Ctrl + rueda del ratón` o, en el caso de una pantalla táctil, acercando los dedos.
+- Advertencias de errores de accesibilidad (`Revisar > Comprobar accesibilidad`). Mediante la casilla `Mantener la ejecución del comprobador de accesibilidad mientras trabajo` se agrega el botón _Accesibilidad_ a la barra de estado que muestra los avisos de problemas de accesibilidad en tiempo real.
+- Opción de efectos de sonido para mejorar la accesibilidad (`Opciones > Accesibilidad`). Las páginas se pueden pasar mediante la rueda del ratón, la barra de desplazamiento horizontal o, en el caso de pantalla táctil, mediante el desplazamiento del dedo.
+
+
+## Elementos básicos
+
+Los elementos de la interfaz de Word, de arriba a abajo son:
+
+- Línea superior
+    - _Barra de herramientas de acceso rápido_. Comandos de uso frecuente (guardar, deshacer, rehacer, abrir, impresión rápida, ortagrafía y gramática, etc.). Se puede seleccionar qué botones incluir en esta barra mediante el menú personalizar de esa barra (último botón con icono _expandir_, en forma de flecha hacia abajo). Técnicamente esta barra pertenece a la cinta de opciones aunque se muestre a la izquierda de la _barra de título_.
+    - _Barra de título_. Muestra el nombre del documento. En el caso de un documento en blanco muestra "Documento1 - Word".
+    - _Botones de control de la ventana_ (minimizar, restaurar\/maximizar, cerrar).
+- _Cinta de opciones_.
+    - Nombres de las pestañas
+    - Barras de herramientas (grupos de botones)
+- Área de trabajo (zona de edición del texto)
+    - Barra vertical de desplazamiento. Situada en la parte derecha de la ventana.
+- Paneles. Con información o comandos relativos a la edición. Pueden mostrarse a ambos lados del área de trabajo.
+- Barra de estado. Muestra información del documento (página actual, número de palabras, errores gramaticales, idioma, vista del documento, nivel de zoom).
+
+
+### La cinta de opciones
+
+Word 2003 fue el último en mostrar una interfaz basada en menús. La _barra de menú_ consistía en una línea horizontal con nombres (Archivo, Edición, Ver, etc.) cada uno de los cuales, al ser pulsados, se desplegaban en una lista vertical de opciones. Por otro lado, las _barras de herramientas_ (_estándar_, _de formato_, etc.) consistían en conjuntos de botones o iconos dispuestos horizontalmente que al ser pulsados realizaban una acción.
+
+A partir de la versión 2007 se sustituyó la _barra de menús_ y las _barras de herramientas_ por la _cinta de opciones_. En la _cinta de opciones_ en vez de la _barra de menú_ existen nombres de _pestañas_ cada una de las cuales contienen barras de herramientas con botones (llamados _comandos_) agrupados tanto vertical como horizontalmente.
+
+Como existen muchos comandos y no se pueden mostrar todos en la cinta de opciones, muchos grupos tienen un pequeño icono en la parte inferior derecha llamado _selector de cuadro de diálogo_ que abre, como su nombre indica, una ventana donde se pueden configurar más opciones.
+
+> La _cinta de opciones_ ha terminado con la duplicidad que existía en las versiones anteriores a 2007 en las que una misma acción se podía obtener mediante las opciones del menú o los botones de las barras de herramientas. Para ello, los nombres de la antigua barra de menús se ha sustituido por los nombres de la pestañas, los submenús por los nombres de los grupos de comandos y las opciones finales del menú por los comandos del grupo de comandos.
+
+### Contraer la cinta de opciones
+
+La cinta de opciones se puede minimizar de forma que solo se muestre la línea con los nombres de las pestañas.
+
+Para contraer la cinta de opciones se puede elegir uno de los siguientes métodos:
+
+- Pulsar con el botón derecho del ratón en una zona vacía o en la línea reservada para los nombres de los grupos y elegir _Contraer la cinta de opciones_.
+- Pulsar el control en forma de pequeña flecha en la parte inferior derecha de la barra de opciones.
+- Pulsar `Ctrl + F1`
+
+> En _Office 2007_ se denominaba _minimizar_ en vez de _contraer_. Carecía del control para minimizar desde la propia cinta de opciones pero permitía hacerlo desde el menú de configuración de la _barra de herramientas de acceso rápido_.
+
+
+#### Pestañas principales
+
+Las _pestañas principales_ son las que siempre están visibles. Las _pestañas modales_ se muestran cuando se selecciona ciertos tipos de objetos.
+
+
+<table>
+<thead>
+<tr>
+<th>Pestaña</th>
+<th>Grupos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archivo</td>
+<td>(No es una pestaña)</td>
+</tr>
+<tr>
+<td>Inicio</td>
+<td>Portapapeles<br>Fuente<br>Párrafo<br>Estilos<br>Edición</td>
+</tr>
+<tr>
+<td>Insertar</td>
+<td>Páginas<br>Tablas<br>Ilustraciones<br>Complementos<br>Multimedia<br>Vínculos<br>Comentarios<br>Encabezado y pie de página<br>Texto<br>Símbolos</td>
+</tr>
+<tr>
+<td>Dibujar<br>(no activa por defecto)</td>
+<td>Herramientas (Normal)<br>Lápices<br>Conventir</td>
+</tr>
+<tr>
+<td>Diseño <br> (Formato en 2016)</td>
+<td>Formato del documento<br>Fondo de página</td>
+</tr>
+<tr>
+<td>Disposición</td>
+<td>Configurar página<br>Párrafo<br>Organizar</td>
+</tr>
+<tr>
+<td>Referencias</td>
+<td>Tabla de contenido<br>Notas al pie<br>Investigación<br>Citas y bibliografía<br>Títulos<br>Índice<br>Tabla de autoridades</td>
+</tr>
+<tr>
+<td>Correspondencia</td>
+<td>Crear<br>Iniciar combinación de correspondencia<br>Escribir e insertar campos<br>Vista previa de resultados<br>Finalizar</td>
+</tr>
+<tr>
+<td>Revisar</td>
+<td>Revisión<br>Voz<br>Accesibilidad<br>Idioma<br>Comentarios<br>Seguimiento<br>Cambios<br>Comparar<br>Proteger<br>Entrada de lápiz</td>
+</tr>
+<tr>
+<td>Vista</td>
+<td>Vistas<br>Inmersivo<br>Movimiento de página<br>Mostrar<br>Zoom<br>Ventana<br>Macros<br>SharePoint</td>
+</tr>
+<tr>
+<td>Programador<br>(no activa por defecto)</td>
+<td>Código<br>Complementos<br>Controles<br>Asignación<br>Proteger<br>Plantillas</td>
+</tr>
+<tr>
+<td>Ayuda</td>
+<td>Ayuda</td>
+</tr>
+</tbody>
+</table>
+
+> - La pestaña _Dibujar_ no se encuentra activa por defecto a menos que se trate de un dispositivo habilitado para la función táctil (ordenador con pantalla táctil). 
+> - Tampoco se activa por defecto la pestaña _Programador_.
+> - Ambas se pueden agregar a la cinta de opciones marcando la casilla correspondiente en `Archivo > Opciones > Personalizar cinta de opciones`.
+
+
+##### Pestañas en la edición de blog
+
+Se puede crear una entrada de blog mediante `Archivo > Nuevo` y elegir la plantilla `Entrada de blog` o `Archivo > Compartir > Publicar en blog`. Cuando se está editando un blog aparecen solo dos pestañas, _Entrada de blog_ e _Insertar_.
+
+<table>
+<thead>
+<tr>
+<th>Pestaña</th>
+<th>Grupos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrada de blog</td>
+<td>Blog<br>Portapapeles<br>Texto básico<br>Estilo<br>Revisión</td>
+</tr>
+<tr>
+<td>Insertar</td>
+<td>Tablas<br>Ilustraciones<br>Complementos<br>Vínculos<br>Texto<br>Símbolos</td>
+</tr>
+</tbody>
+</table>
+
+> Aunque tenga el mismo nombre, la pestaña _Insertar_ en entrada de blog es diferente de la pestaña _Insertar_ que aparece normalmente. De hecho, se pueden configurar independientemente.
+
+
+
+
+### Las reglas
+
+- Horizontal. Permite establecer los márgenes horizontales, las sangrías y las tabulaciones.
+- Vertical. Permite ajustar los márgenes verticales.
+
+
+### La barra de estado
+
+La información de la barra de estado está formada por controles que se pueden pulsar.
+
+Información | Acción al pulsar
+--- | ---
+número de página |cuadro de diálogo _Ir a_
+Palabras | _Contar palabras_
+Errores de revisión | Menú contextual que permite corregir la palabra
+Idioma | Cuadro de diálogo _Idioma_
+Macro | Cuadro de diálogo _Grabar macro_
+Vista de documento | Selecciona la _vista de documento_ (diseño de impresión, pantalla completa, web, esquema y borrador)
+Zoom | Nivel de zoom
+
+
+## Operaciones básicas
+
+La operaciones básicas que se pueden realizar sobre un documento (crear, guardar, cerrar e imprimir) se encuentran en la pestaña _Archivo_ (o el _botón de Office_ en el caso de _Word 2007_).
+
+Las operaciones básicas de edición del texto se encuentran principalmente en las pestañas _Inicio_ (copiar y pegar, formatear el texto, alinearlo, establecer títulos y estilos, etc.) e _Insertar_ (incluir tablas, imágenes y gráficos, encabezado y pie de página, etc.). Las opciones de configuración de la página en la pestaña _Diseño_ (tamaño y orientación del papel, márgenes, marca de agua, etc.).
+
+### Operaciones básicas sobre un documento
+
+#### Crear un documento nuevo
+
+Se crea un documento nuevo con la opción `Archivo > Nuevo`.
+
+Antes de crearse el nuevo documento aparece una ventana donde se puede elegir crear un documento en blanco (método abreviado `Ctrl+U`) o a partir de una _plantilla_ (propia o instalada). Una _plantilla_ es un tipo de documento especial, con la extensión .dot o .dotx, que contiene un formato (diseño de página, tipo de letra, márgenes, etc.) predefinido. _Nuevo a partir de existente..._ que copia el contenido de un documento guardado en disco.
+
+> No es lo mismo la opción de crear un documento nuevo medianta el menú `Archivo > Nuevo` que mediante la combinación de teclas `Ctrl+U`. La última genera directamente un documento en blanco, no dando la posibilidad de elegir la plantilla en la que se quiere que se base el documento.
+
+Cuando se crea un nuevo documento en _Word_, el nombre predeterminado es _Documento1_ y se muestra en la barra de título.
+
+#### Abrir un documento
+
+Se abre un documento existente con la opción `Archivo > Abrir` o mediante el método abreviado `Ctrl+A`.
+
+El botón de abrir permite elegir varias opciones como la apertura como solo lectura o la reparación del documento.
+
+#### Guardar el documento
+
+Se guarda un documento con la opción `Archivo > Guardar` o mediante el método abreviado `Ctrl + G` o `May + F12`.
+
+La primera vez que se guarda un documento aparece el cuadro de diálogo _Guardar como_.
+
+
+#### Guardar como
+
+En el caso de que queramos guardar el documento con otro nombre o con otro formato, hay que elegir la opción `Archivo > Guardar como`o el método abreviado `F12`.
+
+El cuadro de diálogo _Guardar como_ consta de los siguientes elementos:
+
+- Controles para elegir la carpeta donde se guardará el documento.
+- Cuadro de texto _Nombre de archivo_. La extensión (_.docx_, por ejemplo) es opcional; si no se indica _Word_ la incluirá automáticamente dependiendo del tipo de archivo elegido.
+- Lista desplegable _Tipo_. Permite elegir el formato del documento. Por defecto es _Documento de Word (*.docx)_.
+- Cuadro de texto _Autores_. Permite indicar las personas que han creado el contenido del documento. Se pueden indicar más de un autor separándolos por punto y coma.
+- Cuadro de texto _Etiquetas_. Permite indicar una o más palabras que sirven para localizar el documento en una búsqueda. Se puede indicar más de una etiqueta separándolas por punto y coma.
+- Cuadro de selección _Guardar miniatura_. Por defecto los iconos de los documentos de _Word_ tienen la misma imagen. Mediante esta casilla la imagen del icono es una miniatura de la primera página del documento permitiendo diferenciar visualmente los iconos de documentos diferentes.
+- Lista desplegable _Herramientas_ con las siguientes opciones:
+    - _Conectar a unidad de red..._
+    - _Opciones al guardar..._
+    - _Opciones generales..._
+    - _Opciones Web..._
+    - _Comprimir imágenes..._
+
+
+#### Cerrar el documento
+
+Se puede cerrar el documento mediante `Archivo > Cerrar` o con el métido abreviado `Ctrl + R`. Si el documento no se ha guardado desde la última vez que se modificó, aparece un cuadro de diálogo que ofrece la posibilidad de guardarlo.
+
+
+### Operaciones básicas de edición
+
+#### Desplazarse a través del documento
+
+El lugar exacto dentro del documento donde se puede escribir texto o insertar un objeto está marcado mediante el _cursor_ que, en su forma predeterminada, consiste en una pequeña barra vertical que parpadea lentamente.
+
+El cursor se puede cambiar de lugar mediante las teclas de dirección del teclado o haciendo clic con el botón izquierdo del ratón en el lugar donde se quiere que se desplace el ratón (o una pulsación simple con el dedo en el caso de dispositivos táctiles).
+
+Tecla | Desplazamiento
+--- | ---
+Tecla desplazamiento horizontal | Un carácter
+Tecla desplazamiento vertical | una línea
+Ctrl + tecla desplazamiento horizontal | Una palabra
+Ctrl + tecla desplazamiento vertical | Un párrafo
+Av Pág | Parte inferior del área de edición
+Re Pág | Parte superior del área de edición
+Ctrl + Av Pág | (inicio de) Página siguiente
+Ctrl + Re Pág | (inicio de) Página anterior
+Inicio | Principio de la línea
+Fin | Final de la línea
+Ctrl + Inicio | Principio del documento
+Ctrl + Fin | Final del documento
+Ctrl + I | Cuadro de diálogo Ir a...
+
+Otra forma de desplazarse rápidamente por un documento de muchas páginas consiste en usar la _barra de desplazamiento vertical_, en la parte derecha del área de trabajo.
+
+#### Seleccionar texto y gráficos
+
+Se puede seleccionar el texto haciendo arrastrando el ratón tras hacer clic donde se quiere que comience la selección.
+
+Mediante el teclado se puede usar la tecla `May` a la vez que se desplaza el cursor mediante alguna de las teclas de desplazamiento. Por ejemplo, con `May + Inicio` se selecciona desde la posición actual del cursor hasta el principio de la línea y con `May + Ctrl + Av Pág` se selecciona hasta el inicio de la página siguiente.
+
+Con `Ctrl + E` se selecciona 
+
+> - Una regla nemotécnica consiste en pensar que con `Ctrl + E` se selecciona el documento _**E**ntero_ (_entero_ empieza por _e_).
+> - En las distribuciones en inglés el método abreviado es `Ctrl + A` de _**A**ll_.
+
+##### Extender una selección
+
+Pulsando _F8_ se entra en el modo _extensión de selección_. A partir de ahí se pueden realizar dos acciones:
+
+- Se pulsa en cualquier ubicación del documento y la selección se extenderá hasta allí.
+
+- Su pulsa _F8_ de nuevo repetidamente. Con ello se amplia la selección a la palabra, frase, párrafo o todo el documento. Para reducir la selección se pulsa `May + F8`.
+
+> Como la primera pulsación de _F8_ es para entrar en el modo _extensión de selección_, para seleccionar la palabra hay que pulsar dos veces _F8_; tres para la frase, cuatro para el párrafo y cinco para el documento.
+
+Para seleccioner un bloque de texto vertical hay que pulsar `Ctrl + May + F8`
+
+El modo de _extensión de la selección_ se detiene mediante la tecla `Esc`.
+
+
+#### Copiar, cortar y pegar. Arrastrar.
+
+Tras seleccionar el texto se puede copiar, cortar o pegar mediante los métodos abreviados `Ctrl + C`, `Ctrl + X` y `Ctrl + V`, las opciones del menú contextual al pulsar con el botón derecho del ratón sobre la selección o mediante los comandos correspondientes de la cinta de opciones en `(pestaña) Inicio > (grupo) Portapapeles`.
+
+Otra forma de cortar el texto seleccionado consiste en arrastrar la selección con el ratón hasta el punto donde se quiere pegar. Si se pulsa `Ctrl` mientras se arrastra, en vez de cortar se copia lo seleccionado.
+
+
+#### Deshacer la edición
+
+Para deshacer o rehacer la acción anterior se pueden usar los métodos abreviados `Ctrl + Z` y `Ctrl + Y`, respectivamente. También se puede usar el comando correspondiente en la _barra de herramientas de acceso rápido_.
+
+
+## Formato del texto
+
+Para poder gestionar adecuadamente el formato del documento, el texto tiene que tener aplicado el _estilo_ correspondiente según su función. Por ejemplo, si se trata de un titular habrá que marcarlo como _Título 1_, _Título 2_, etc. según su posición en la jerarquía de titulares. De esta forma, si realiza un cambio sobre el estilo _Título 2_, se aplicará automáticamente a todos los titulares con ese estilo.
+
+Los estilos se encuentran en `Inicio > Estilos`.
+
+### Los temas
+
+_Word_ incluye conjuntos de estilos predefinidos, llamados _temas_, que se pueden aplicar muy rápidamente mediante `Diseño > Formato del documento`.
+
+No hay que confundir _tema_ con _plantilla_. Las _plantillas_ son documentos previamente creados que además de los estilos incluyen contenido preparado. Por ejemplo, una plantilla para currículum vitae puede contener una imagen situada en la parte superior, texto separado en columnas o espacios para incluir los datos personales. 
+
+
+### Formato de carácter (negritas, cursivas, etc,)
+
+Las opciones de formato de carácter se encuentran en `Inicio > Fuente`.
+
+Se puede acceder al cuadro de diálogo `Fuente` mediante el método abreviado `Ctrl + M`.
+
+Consta de los siguientes elementos:
+
+- (Pestaña) _Fuente_
+  - _Fuente_. Lista con los tipos de fuentes.
+  - _Estilo de fuente_. Normal, cursiva, negrita o negrita cursiva.
+  - _Tamaño_
+  - _Color de fuente_
+  - _Estilo de subrayado_. Solo palabras, simple, doble, punteado, etc.
+  - _Color de subrayado_.
+  - _Efectos_. Tachado, doble tachado, superíndice, subíndice, versalitas, mayúsculas, oculto.
+  - _Vista previa_. Permite ver los cambios sin salir del cuadro de diálogo.
+  - (Botón) _Establecer como predeterminado_. Establece la fuente predeterminada de ese documento o de todos (en ese caso cambia la plantilla _Normal.dotm_).
+  - (Botón) _Efectos de texto_. Diferentes efectos como sombra o relleno.
+  - Botones _Aceptar_ y _Cancelar.
+- (Pestaña) _Avanzado_. Permite establecer la escala en tanto por ciento, el espaciado entre caracteres o la posición vertical, entre otras opciones.
+
+### Formato de párrafo (interlineado, espaciado, sangrías, etc.)
+
+Las opciones de formato de párrafo se encuentran en `Inicio > Párrafo`.
+
+El cuadro de diálogo `Párrafo`consta de los siguientes elementos:
+
+- (Pestaña) _Sangría y espacio_
+  - _Alineación_ Izquierda, centrada, derecha o justificada.
+  - _Nivel de esquema_. Es el nivel donde se muestra en la vista _Esquema_. Puede ser _texto independiente_ o un nivel específico.
+  - _Sangría izquierda_. Espacio a la izquierda del párrafo.
+  - _Sangría derecha_. Espacio a la derecha del párrafo.
+  - _Especial_. Aplica sangría solo a la primera línea, pudiendo ser francesa (el hueco se aplica a todo el párrafo excepto la primera línea).
+  - _Espaciado anterior_. Espacio antes del párrafo.
+  - _Espaciado posterior_. Espacio tras el párrafo.
+  - (casilla) _No agregar espacio entre párrafos del mismo estilo_
+  - _Interlineado_. Múltiple (en tantos por 1. Por ejemplo, 3 significa 300%), sencillo, 1,5 líneas, doble, mínimo, exactamente.
+- (Pestaña) _Líneas y saltos de página_
+  - (casilla) _Control de líneas viudas y huérfanas_. Una _línea viuda_ es la última línea de un párrafo que ha quedado sola en la página siguiente. Una _línea huérfana_ es la primera línea de un párrafo que ha quedado sola en la página anterior.
+  - (casilla) _Conservar con el siguiente_. Si se seleccionan previamente varios párrafos, esta opción permite que no haya espacio entre los párrafos.
+  - (casilla) _Conservar líneas juntas_. Mantiene todas las líneas de un párrafo en la misma página.
+  - (casilla) _Salto de página anterior_. Establece que el párrafo indicado siempre incluirá detrás un salto de página.
+  - (casilla) _Suprimir números de línea_
+  - (casilla) _No dividir con guiones_
+  - _Ajuste estrecho del cuadro de texto_. Permite que el texto que rodea el cuadro de texto pueda entrar en el interior, ajustándose así más estrechamente al contenido del cuadro de texto.
+    > Para que estas opciones se apliquen al cuadro de texto éste no debe contener línea ni relleno y el ajuste del texto ha de establecerse en _Estrecho_.
+- _Vista previa_. Para una previsualización sin salir del cuadro de diálogo.
+- (botón) _Tabulaciones..._ Otro acceso directo al cuadro de diálogo `Tabulaciones`.
+- (botón) _Establecer como predeterminado_.
+- Botones _Aceptar_ y _Cancelar_.
+
+
+### Formato de página (orientación, márgenes, etc.)
+
+
+
+
+## Corrección de un texto
+
+## Impresión
+
+- Método abreviado CTRL+P
+- Márgenes
+
+## Columnas
+
+## Tabulaciones
+
+## Tablas y gráficos
+
+### Tablas
+
+
+### Gráficos
+
+
+### Imágenes
+
+Tipos de imágenes:
+- WMF -> Formato vectorial de Windows
+- Mapa de bits
+    - BMP. Sin compresión.
+    - JPEG (Joint Photographic Experts Group). Compresión con pérdida. Sin transparencia. 24 bits o 16 millones de colores.
+    - TIFF (Tagged Imagen File Format). Compresión sin pérdidas.
+    - GIF (Graphics Interchange Format). Compresión sin pérdida. Con transparencia. Solo 256 colores. Opción de animación.
+    - PNG (Portable Network Graphics). Sucesor del Gif. Compresión sin pérdida. Transparencia. No admite animación. PNG-8 solo 256 colores. PNG-24 permite 16 millones de colores.
+
+BMP, JPEG y TIFF suelen usarse para imágenes con muchos tonos (fotografías) mientras que GIF y PNG para imágenes con pocos tonos (ilustraciones, logotipos, etc.). 
+
+#### Comprimir imágenes
+
+Las imágenes en un documento de _Word_ pueden hacer que tenga un tamaño considerable. Una forma de reducir el tamaño consiste en cambiar la resolución de las imágenes o recortar la parte no visible (si es el caso).
+
+Cuando se selecciona una image (por ejemplo, haciendo clic en ella) aparece la pestaña modal _Formato_. En el grupo _Ajustar_ se encuentra el comando _Comprimir imágenes_ que abre un cuadro de diálogo con las siguientes opciones:
+
+- _Aplicar a_. Permite elegir si solo se aplica a las imágenes seleccionadas o a todas las imágenes del documento. En general es más probable que se prefiera la segunda opción. En caso de querer realizarlo solo para varias imágenes, se pueden seleccionar manteniendo pulsada la tecla `Ctrl` mientras se hace clic en ellas.
+- _Cambiar resolución_.
+- _Opciones_. Permite elegir mediante dos casillas de verificación, si se quiere solo comprimir, eliminar las áreas de la imagen que no se muestran o ambas opciones a la vez.
+
+
+### Métodos abreviados de teclado
+
+Combinación | Comando | Ayuda para memorizar
+--- | --- | ---
+Ctrl+a | **A**brir documento (cuadro de diálogo) | **A** de **A**brir
+Ctrl+b | **B**uscar (cuadro de diálogo) | **B** de **B**uscar
+Ctrl+c | **C**opiar | **C** de **C**opiar
+Ctrl+d | Alineación **D**erecha | **D** de **D**erecha
+Ctrl+e | Seleccionar todo | **E** de **E**ntero
+Ctrl+f | Sangría **F**rancesa | **F** de **F**rancesa
+Ctrl+g | **G**uardar | **G** de **G**uardar
+Ctrl+h | Sangría | **H** de **H**ueco
+Ctrl+i | **I**r a (cuadro de diálogo) | **I** de **I**r
+Ctrl+j | **J**ustificar texto | **J** de **J**ustificar
+Ctrl+k | Cursiva | La C ya se usa para copiar. **K** suena como la C en **K**ursiva.
+Ctrl+l | Reemplazar (cuadro de diálogo) | 
+Ctrl+m | Fuente (cuadro de diálogo) | 
+Ctrl+n | **N**egrita | **N** de **N**egrita
+Ctrl+o | Texto independiente | 
+Ctrl+p | Im**P**rimir (cuadro de diálogo) | **P** de **P**rint (en inglés)
+Ctrl+q | Alineación iz**Q**uierda | **Q** de iz**Q**uierda
+Ctrl+r | Ce**RR**a**R** documento | **R** de ce**RR**a**R**
+Ctrl+s | **S**ubrayado | **S** de Subrayado
+Ctrl+t | Centrado | La C ya se usa para copiar. La **T** es una raya vertical centrada.
+Ctrl+u | N**U**evo documento | La N ya se usa para negrita. **U** de nUevo.
+Ctrl+v | Pegar | La **V** es como una flecha hacia abajo que indica pegar
+Ctrl+w | Quitar sangría | 
+Ctrl+x | Cortar | La **X** tiene forma de tijeras (cortar)
+Ctrl+y | Rehacer | 
+Ctrl+z | Deshacer | En andaluz, de**Z**acer
+
