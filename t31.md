@@ -171,6 +171,17 @@ _Activación_ de Office. Es el proceso mediante el cual Microsoft verifica que e
 - Opción de efectos de sonido para mejorar la accesibilidad (`Opciones > Accesibilidad`). Las páginas se pueden pasar mediante la rueda del ratón, la barra de desplazamiento horizontal o, en el caso de pantalla táctil, mediante el desplazamiento del dedo.
 
 
+### El modo seguro
+
+El _modo seguro_ (también llamado _modo a prueba de fallos_) abre Word con las opciones por defecto y sin que cargue ningún complemento. Es útil cuando un documento por algún motivo bloquea la aplicación.
+
+> El _modo seguro_ está también disponible para las demás aplicaciones de Microsoft Office.
+
+Para abrir un documento en modo seguro se puede realizar alguna de estas dos acciones:
+
+- Mantener pulsada la tecla CTRL al hacer doble clic sobre el acceso direto de Word.
+- Ejecutar (clic con el botón derecho en el botón Inicio de Windows > Ejecutar) el omando `winword /safe`.
+
 ## Elementos básicos
 
 Los elementos de la interfaz de Word, de arriba a abajo son:
