@@ -29,7 +29,7 @@ Es habitual adquirir _Word_ incluido en un paquete ofimático Office. Todas las 
 
 Versiones de _Word_ para PC:
 
-- Versiones sin soporte técnico*
+- Versiones sin soporte técnico
 
     Nombre | Número de versión | Notas
     ---: | ---: | ---
@@ -121,7 +121,7 @@ Profesional Plus     | Volumen    | Sí| Sí| Sí| Sí| Sí| Sí| Sí| Sí
 
 La _licencia_ de un software establece las condiciones de distribución y uso del producto. Los tipos principales de licencia de Office son:
 
-- _OEM_ (_Original Equipement Manufacturar). Está ya instalado en el equipo cuando se compra.
+- _OEM_ (_Original Equipement Manufacturer_). Está ya instalado en el equipo cuando se compra.
 - _Retail_. Venta por menor (como el típico producto empaquetado que se puede comprar en tiendas).
 - _OLP o de Volumen_. Para empresas con muchos usuarios. Se paga según el número de licencias.
 
@@ -129,7 +129,7 @@ La _licencia_ de un software establece las condiciones de distribución y uso de
 
 _Asociar una cuenta_ a Office. Consiste en ligar una cuenta de Microsoft al producto Office que se ha comprado. Solo se tiene que hacer la primera vez que se instala Office, justo antes de introducir la clave de producto.
 
-_Activación_ de Office. Es el proceso mediante el cual Microsoft identifica verifica que el producto Office es original y cumple las condiciones de uso especificada en los _Términos de licencia_ (por ejemplo, que esté instalado en un solo equipo). Generalmente la activación es automática tras aceptar los _Términos de licencia_. En caso contrario, aparecerá el asistente de activación donde se puede elegir si se quiere activar a través de Internet o por teléfono.
+_Activación_ de Office. Es el proceso mediante el cual Microsoft verifica que el producto Office es original y cumple las condiciones de uso especificada en los _Términos de licencia_ (por ejemplo, que esté instalado en un solo equipo). Generalmente la activación es automática tras aceptar los _Términos de licencia_. En caso contrario, aparecerá el asistente de activación donde se puede elegir si se quiere activar a través de Internet o por teléfono.
 
 ### Novedades de las versiones de Word
 
@@ -150,16 +150,16 @@ _Activación_ de Office. Es el proceso mediante el cual Microsoft identifica ver
 
 #### Novedades de Word 2016
 
-- Crear, abrir, editrar y guardar documentos directamente en la nube.
+- Crear, abrir, editar y guardar documentos directamente en la nube.
 - Nueva herramienta de búsqueda denominada _¿Qué desa hacer?_ (herramienta _Tell me_ en la versión inglesa).
 - Opción _Enviar como_.
 - Colaboración en tiempo real con usuarios conectados a _Office Online_.
-- Incorpora _Insights_ que proporciona información contextual desde Internet. Permite obtener definicios, artículos de Wiki y búsquedas relacionadas con palabras o frases del documento.
+- Incorpora _Insights_ que proporciona información contextual desde Internet. Permite obtener definiciones, artículos de Wiki y búsquedas relacionadas con palabras o frases del documento.
 
 #### Novedades de Word 2019
 
 - Muestra en tiempo real los cambios de otros colaboradores.
-- Microsoft Translator (pestaña `Revisar` de la cinta de opciones) permite traducir palabras o frases.
+- _Microsoft Translator_ (pestaña `Revisar` de la cinta de opciones) permite traducir palabras o frases.
 - Vista de lectura inmersiva (pestaña `Vista`) con una vista para una mejor experiencia de lectura. Con botones para ajustar rápidamente el ancho de conlumna, color de página, espaciado de texto o lectura en voz alta con _Read Aloud_.
 - Dibujo mediante lápiz digital (pestaña `Dibujar`).
 - Posibilidad de generar una ecuación matemática mediante el lenguaje _LaTeX_ (`Insertar > LaTeX)`.
@@ -178,10 +178,10 @@ Los elementos de la interfaz de Word, de arriba a abajo son:
 - Línea superior
     - _Barra de herramientas de acceso rápido_. Comandos de uso frecuente (guardar, deshacer, rehacer, abrir, impresión rápida, ortagrafía y gramática, etc.). Se puede seleccionar qué botones incluir en esta barra mediante el menú personalizar de esa barra (último botón con icono _expandir_, en forma de flecha hacia abajo). Técnicamente esta barra pertenece a la cinta de opciones aunque se muestre a la izquierda de la _barra de título_.
     - _Barra de título_. Muestra el nombre del documento. En el caso de un documento en blanco muestra "Documento1 - Word".
-    - _Botones de control de la ventana_ (minimizar, restaurar\/maximizar, cerrar).
+    - _Botones de control de la ventana_ (minimizar, restaurar/maximizar, cerrar).
 - _Cinta de opciones_.
     - Nombres de las pestañas
-    - Barras de herramientas (grupos de botones)
+    - Barras de herramientas (grupos de comandos)
 - Área de trabajo (zona de edición del texto)
     - Barra vertical de desplazamiento. Situada en la parte derecha de la ventana.
 - Paneles. Con información o comandos relativos a la edición. Pueden mostrarse a ambos lados del área de trabajo.
@@ -531,15 +531,104 @@ El cuadro de diálogo `Párrafo`consta de los siguientes elementos:
 
 ## Tabulaciones
 
-## Tablas y gráficos
 
-### Tablas
+## Tablas
 
+Se puede insertar una tabla con el comando `tabla` que se encuentra en `(ficha) Insertar > (grupo) Tablas`.
+
+Ese comando abre una ventana con los siguientes elementos:
+- Regilla de creación de tabla básica, de hasta  10x8 celdas (10 columnas y 8 filas).
+- `Insertar tabla...` permite crear una tabla más grande o establecer algunas opciones. Abre el cuadro de diálogo _Insertar tabla_ con las siguientes opciones:
+  - _Número de columnas_
+  - _Número de filas_
+  - _Autoajuste_. Permite elegir una de estas tres opciones:
+    - _Ancho de columna fijo_ (automático o un número en centímetros)
+    - _Autoajustar el contenido_. Ajusta el ancho de columna automáticamente.
+    - _Autoajustar a la ventana_. Ajusta el ancho de tabla automáticamente.
+  - (casilla) _Recordar dimensiones para tablas nuevas_
+- _Dibujar tabla_
+- _Convertir texto en tabla_. Esta opción está habilitada cuando se selecciona previamente texto con datos tabulares, por ejemplo, separados por una tabulación. Abre un cuadro de diálogo con los siguientes elementos:
+  - _Número de columnas_. Por defecto muestra el número de columnas detectadas.
+  - _Número de filas_. Por defecto muestra el número de filas detectadas.
+  - _Autoajuste_ (ancho de columna fijo, Autoajustar al contenido o Autoajustar a la ventana).
+  - Separador del texto: _Párrafos_, _Puntos y comas_, _Tabulaciones, _Otro_ (permite indicar un carácter tecleándolo).
+- _Hoja de cálculo de Excel_
+- _Tablas rápidas_. Permite elegir una tabla con formato prediseñado.
+
+Cuando se selecciona una tabla aparece el conjunto de pestañas contextuales `Herramientas de tabla`, formado por las pestañas contextuales `Diseño` (no confundir con la pestaña principal del mismo nombre) y `Presentación`.
+
+La pestaña contextual _Diseño_ está formada por los siguientes grupos de comandos:
+
+- _Opciones de estilo de tabla_. Está formado por las siguientes casillas de verificación que permite cambiar el estilo de algunas filas y columnas.
+  - _Fila de encabezado_. Muestra el formato especial de la primera fila.
+  - _Fila de totales_. Muestra el formato especial de la última fila.
+  - _Filas con bandas_. Diferencia las filas pares con un sombreado.
+  - _Primera columna_. Muestra el formato especial de la primera columna.
+  - _Última columna_. Considera la última columna como totales.
+  - _Columnas con bandas_. Diferencia las columnas pares con un sombreado. 
+- _Estilos de tabla_. Forma rápida de aplicar un estilo a la tabla según las opciones elegidas en el grupo de comandos anterior. También incluye el botón _Sombreado_ que permite indicar un color de fondo a las celdas seleccionadas.
+- _Bordes_. Permite especificar los bordes de la tabla pudiendo elegirse bordes distintos para cada uno de los lados de cada celda.
+
+La pestaña contextual _Presentación_ dispone de los siguientes grupos de comandos:
+- _Tabla_.
+- _Dibujar_
+- _Filas y columnas_
+- _Combinar_
+- _Tamaño de celda_
+- _Alineación_
+- _Datos_
+
+
+## Ilustraciones
 
 ### Gráficos
 
+Se puede insertar un gráfico mediante el comando `Gráfico` que se encuentra en `(pestaña) Insertar > (grupo) Ilustraciones`.
 
-### Imágenes
+Se puede elegir uno de los siguientes tipos y subtipos de gráficos:
+- _Columna_. Presenta normalmente categorías en el eje horizontal y valores en el vertical. Se pueden elegir varios tipos de gráficos de columnas:
+  - _Columnas agrupadas_ (2D o 3D)
+  - _Columnas apiladas_ (2D o 3D). Sin eje de profundidad. Cuando se desea destacar el total de una serie de datos.
+  - _Columnas 100% apiladas_ (2D y 3D). Sin eje de profundidad. Destaca las contribuciones al conjunto donde cada columna representa el 100%.
+  - _Columnas 3D_. Tienen un eje de profundidad. Cuando se desea comparar datos en los ejes horizontal y de profundidad.
+- _Línea_. Los datos tanto de las categorías como de los valores se distribuyen uniformemente a lo largo del eje horizontal y vertical, respectivamente. Son idóneos para mostrar datos continuos en el tiempo, a intervalos regulares.
+- _Circular y de anillo_. Muestran, en forma de sectores de una circunferencia, el tamaño de los elementos de una serie de datos en comparación con la suma de todos los elementos. Se usan cuando hay una única serie de datos con pocas categorías y cuyos valores son todos positivos y casi ninguno cero. Un ejemplo muy común de uso es la representación de los votos obtenidos por los candidatos a una elección. El _gráfico de anillos_ se puede emplear con más de una serie de datos que se representarían en anillos concéntricos.
+- _Barra_. Similar al de columnas pero las categorías se organizan en el eje vertical y los valores en el horizontal. 
+- _Área_
+- _X Y (dispersión)_
+- _Mapa_
+- _Cotizaciones_
+- _Superficie_
+- _Radial_
+- _Rectángulos_
+- _Proyección solar_
+- _Histograma_
+- _Cajas y bigotes_
+- _Cascada_
+- _Embudo_
+- _Cuadro combinado_
+
+
+Cuando se selecciona un gráfico aparece en la cinta de opciones  el conjunto de pestañas contextuales `Herramientas de gráficos`, formado por las pestañas contextuales `Diseño` (no confundir con la pestaña principal del mismo nombre) y `Formato`.
+
+Cuando se selecciona un gráfico aparece en su parte superior derecha los siguientes botones:
+- _Opciones de diseño_. Permite especificar el ajuste del gráfico con el texto.
+- _Elementos de gráfico_. Lista de elementos que se pueden mostrar u ocultar (ejes, títulos del eje, título del gráfico, etiquetas de datos, tabla de datos, líneas de cuadrícula y leyenda).
+- _Estilos de diseño_. Permite cambiar el estilo o el color del gráfico.
+- _Filtros de gráfico_. Permite mostrar u ocultar datos en el gráfico.
+
+### Imágenes y otras ilustraciones
+
+Al igual que los gráficos, se pueden insertar multitud de otras ilustraciones en Word mediante los comandos que se encuentran en `(pestaña) Insertar > (grupo) Ilustraciones`. Se pueden insertar los siguientes objetos:
+
+- _Imágenes_. Inserta una imagen desde disco.
+- _Imágenes en línea_. Inserta una imagen en la Web (buscador Bing o desde OneDrive).
+- _Formas_
+- _Iconos_
+- _Modelos 3D_
+- _SmartArt_
+- _Gráfico_
+- _Captura_
 
 Tipos de imágenes:
 - WMF -> Formato vectorial de Windows
