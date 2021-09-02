@@ -517,9 +517,45 @@ El cuadro de diálogo `Párrafo`consta de los siguientes elementos:
 
 ### Formato de página (orientación, márgenes, etc.)
 
+Las opciones de configuración de la página se encuentran en `(pestaña) Disposición > (grupo) Configurar página`.
 
+> La pestaña `Disposición` es nueva en Word 2019. Anteriormente el grupo `Configurar página` se encontraba en la pestaña `Diseño`.
+
+Los comandos del grupo son:
+- _Márgenes_. Se puede elegir una configuración preestablecida o personalizar los márgenes, lo que abre el cuadro de diálogo `Configurar página`.
+- _Orientación_. Vertical u horizontal.
+- _Tamaño_. El tamaño A4 es 21 x 29,7 cm.
+- _Columnas_
+- _Saltos_. De página, columna y sección.
+- _Números de línea_. Indica el número de línea en el margen izquierdo. Se puede elegir `continua` y numerar todas las líneas del documento o reiniciar a 1 cada vez que comienza una nueva página o cada vez que comienza una nueva sección. También se puede anular la numeración en los párrafos elegidos.
+- _Guiones_. Permite elegir _Ninguno_, _Automático_ o _Manual_. Con _Manual_ pregunta si se quiere dividir medianta un guión cada vez que encuentra una posible división. _Opciones de guiones..._ abre un cuadro de diálogo que permite elegir si se dividen las palabras en mayúsculas (por defecto se dividen) o el número de palabras con guiones seguidas (por defecto está sin limitar).
+
+> - Para insertar un _guión de no separación_ pulsar las teclas `Ctrl + May + guión`.
+> - Para impedir que se separe el texto de un párrafo, expandir el grupo `(pestaña) Inicio > (grupo) párrafo`. En el cuadro de diálogo que aparece, elegir la pestaña `Líneas y saltos de página` y marcar la casilla `no dividir con guiones`.
 
 ## Corrección de un texto
+
+### Revisar ortografía y gramática
+
+El comando `Ortografía y gramática` se encuentra en `(pestaña) Revisar > (grupo) Revisión` o mediante el método abreviado `F7`. Al pulsarlo se abre el panel lateral _Revisión_ donde se puede elegir la palabra de sustitución propuesta para cada palabra que no esté en el diccionario. También se puede elegir si se incluye en el diccionario o se omite una vez o para siempre.
+
+Las opciones de corrección ortográfica y gramatical se encuentran en `Archivo > Revisión`. Entre otras opciones que permite establecer se encuentra la revisión en tiempo real, mientras se escribe. 
+
+### Reemplazar
+
+El cuadro de diálogo _Reemplazar_ se abre con el comando `Reemplazar` que se encuentra `(pestaña) Inicio > (grupo) Edición` o mediante el método abreviado `Ctrl + L`.
+
+Entre las opciones de búsqueda se encuentran:
+- _Buscar_. Se puede indicar que busque en todo el documento, solo hacia arriba o solo hacia abajo.
+- _Coincidir mayúsculas y minúsculas_. La búsqueda tiene que coincidir con las mayúsculas y minúsculas especificadas.
+- _Solo palabras completas_. La cadena a buscar es una palabra entera, no parte de una palabra.
+- _Usar caracteres comodín_. `?` indica cualquier carácter. `*` se indica cualquier conjunto de caracteres.
+- _Suena como_
+- _Todas las formas de palabra_
+- _Prefijo_
+- _Sufijo_
+- _Omitir puntuación_
+- _Omitir espacios en blanco_
 
 
 
@@ -566,8 +602,15 @@ Una vez creadas las columnas, el tamaño se puede ajustar mediante unos "tirador
 
 ## Tabulaciones
 
+Para establecer un tabulador mediante la cinta de opciones hay que ir la pestaña `Inicio` y pulsar el selector de diálogo `Párrafo`. En el cuadro de diálogo que se muestra, hay que pulsar en el botón `Tabulaciones...` de la pestaña `Líneas y saltos de página`. Se abre por fin el cuadro de diálogo  `Tabulaciones`. Allí se pueden especificar las tabulaciones del párrafo o párrafos seleccionados previamente:
 
+- Posición de la tabulación en centímetros.
+- Alineación: izquierda, centro, derecha, decimal o barra.
+- Relleno: ninguno, puntos, guiones, rayas.
 
+> Nota. Para visualizar las marcas de tabulación la regla horizontal ha de estar visible. Las reglas se muestran mediante la casilla `regla` de la pestaña `Vista`.
+
+Otra forma de establecer las tabulaciones consiste en marcarlas en la regla horizontal. Para establecer una tabulación tras elegirla (el selector se encuentra encima de la regla vertical) hay que hacer clic en la posición de la regla que se desee. Se puede arrastrar con el ratón para situarla en otra ubicaión. Para eliminarla basta con arrastrarla fuera de la regla.
 
 ## Tablas
 
@@ -704,7 +747,7 @@ Ctrl+h | Sangría | **H** de **H**ueco
 Ctrl+i | **I**r a (cuadro de diálogo) | **I** de **I**r
 Ctrl+j | **J**ustificar texto | **J** de **J**ustificar
 Ctrl+k | Cursiva | La C ya se usa para copiar. **K** suena como la C en **K**ursiva.
-Ctrl+l | Reemplazar (cuadro de diálogo) | 
+Ctrl+l | Reemp**L**azar (cuadro de diálogo) | 
 Ctrl+m | Fuente (cuadro de diálogo) | 
 Ctrl+n | **N**egrita | **N** de **N**egrita
 Ctrl+o | Texto independiente | 
@@ -719,4 +762,3 @@ Ctrl+w | Quitar sangría |
 Ctrl+x | Cortar | La **X** tiene forma de tijeras (cortar)
 Ctrl+y | Rehacer | 
 Ctrl+z | Deshacer | En andaluz, de**Z**acer
-
