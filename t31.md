@@ -519,17 +519,54 @@ El cuadro de diálogo `Párrafo`consta de los siguientes elementos:
 
 
 
-
 ## Corrección de un texto
+
+
 
 ## Impresión
 
-- Método abreviado CTRL+P
-- Márgenes
+Para imprimir mostrando las opciones de impresión hay que seleccionar `Archivo > Imprimir` o el método abreviado `Ctrl + P`. Junto con las opciones se muestra la _vista previa de impresión_ en la que se puede navegar a través de las páginas o cambiar el tamaño de la previsualización.
+
+> En Word 2010 se integró la vista previa de impresión en las opciones de impresión. Para obtener una vista previa en _Word 2007_ había que seleccionar `Botón Office > Imprimir > Vista preliminar`.
+
+Word dispone también de un método llamado _Impresión rápida_ mediante el que se envía el archivo a la impresora predeterminada de manera directa con las últimas opciones de impresión que se hubieran establecido.
+
+> Es habitual colocar el comando de _impresión rápida_ en la _barra de herramientas de acceso rápido_.
+
+
+Las opciones que pueden configurarse para imprimir son:
+- El número de copias
+- La impresora predeterminada
+  > Windows 10 dispone de _Microsoft Print to PDF_, impresora virtual que genera un archivo PDF.
+- Imprimir todo el documento, algunas páginas o solo lo seleccionado (hay que seleccionar el texto previamente para que esta opción esté disponible).
+- Imprimir a una o ambas caras.
+  > La opción _Imprimir manualmente ambas caras_ imprime una cara primero y luego espera la confirmación de que se ha cargado de nuevo el papel con la cara inversa.
+- Si hay que intercalar las copias (en el caso de que se haya elegido más de una copia). Es la opción por defecto. Si no se intercala se imprimen todas las copias de una misma página seguidas.
+- Orientación vertical u horizontal.
+- Dimensión del papel. El formato DIN A4 tiene las dimensiones 21 cm x 29,7 cm
+- Tamaño de los márgenes
+- Número de páginas por hoja
+
+El enlace `Configurar página` al final de las opciones de impresión abre un cuadro de diálo con las pestañas `Márgenes`, `Papel` y `Diseño` desde la que se pueden ajustar algunas más opciones, entre otras:
+- Margen de encuadernación. Espacio en centímetros que se añade al margen interno elegido (izquierda o arriba).
+- Origen del papel. La impresora puede tener varias bandejas; por ejemplo, una bandeja de alimentación automática y otra de alimentación manual (generalmente llamada multiusos porque se emplea para imprimir sobre y otros tamaños menos comunes o con mayor grosor). Se puede elegir el origen para la primera página y para el resto.
+- Empezar una sección en una nueva página, en una página par o impar o sin una nueva página.
+- Desactivar las opciones de encabezados pares e impares diferentes o primera página diferente.
 
 ## Columnas
 
+Para disponer en columnas todo el documento o solo el texto seleccionado, hay que selecciónar el comando `Columnas` que se encuentra en `(pestaña) Disposición > (grupo) Configurar página` y elegir el número y el tipo de columnas que se desee.
+
+> La pestaña `Disposición` es nueva en Word 2019. Anteriormente el comando `Columnas` se encontraba en la pestaña `Diseño`.
+
+Una vez creadas las columnas, el tamaño se puede ajustar mediante unos "tiradores" en la regla horizontal.
+
+> Para mostra las reglas hay que marcar la casilla `Regla`que se encuentra en `(pestaña) Vista > (grupo) Mostrar`.
+
+
 ## Tabulaciones
+
+
 
 
 ## Tablas
